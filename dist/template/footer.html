@@ -1,0 +1,15 @@
+<script id="footer-template" type="text/x-handlebars-template">
+    
+    <ul>
+        {{#each this}}
+            <li class="{{#lg age 18}}{{/lg}}">
+                title:{{@index}}--{{name}}
+                <ol class="{{#findprogramme programme}}{{/findprogramme}}">
+                    {{#programme}}
+                    <li>{{@index}}-{{language}}</li>
+                    {{/programme}}
+                </ol>
+            </li>
+        {{/each}}
+    </ul>
+</template>
